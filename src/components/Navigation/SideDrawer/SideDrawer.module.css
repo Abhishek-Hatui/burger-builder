@@ -1,0 +1,27 @@
+.SideDrawer{
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    top: 0;
+    left: 0;
+    position: fixed;
+    max-width: 70%;
+    width: 280px;
+    height: 100%;
+    z-index: 200;
+    padding: 32px 16px;
+    background-color: white;
+}
+
+@media (min-width: 500px){
+    .SideDrawer{
+        display: none;
+    }
+}
+
+.Open{
+    transform: translate(0); /*this makes the element appear at the defined position*/
+}
+
+.Close{
+    transform: translate(-100%); /* this shifts the element to left*/
+}
